@@ -70,3 +70,13 @@
 			$(this).css('border-color',''); 
 			$("#notifications").slideUp();
 		});
+
+		$(function() {
+			$("iframe[data-src]").Lazy();
+			$("img[data-src]").Lazy();
+		});
+
+		$.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+			var startChar = options.url.indexOf('?') === -1 ? '?' : '&';
+			options.url += startChar + '_noCache=' + cacheBuster;
+		});
