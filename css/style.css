@@ -107,8 +107,13 @@ iframe {
 
 
 
-
-@media
+/* 
+@media(max-width: 730px){
+	.media-fix-1 .header-list li {
+		background-image: none;
+		float: left 10px;
+	}
+} */
 
 /*---------------------------------------
    1.3 TYPOGRAPHY               
@@ -288,6 +293,14 @@ ul.header-list li {
 
 }
 
+@media(max-width: 730px){
+	.media-fix-1 .header-list li {
+		background-image: none;
+		padding-left: 0px;
+	}
+}
+
+
 /*---------------------------------------
    4.2 SUBMIT FORM              
 -----------------------------------------*/
@@ -307,6 +320,7 @@ ul.header-list li {
 	padding: 0 20px 43px;
 	width:100%;
 	float:left;
+	border-radius: 20px;
 }
 
 .submit-form h3 {
@@ -332,7 +346,7 @@ ul.header-list li {
 	margin-bottom:22px;
 	padding: 0 15px;
 	width: 100%;
-    border-radius: 0;
+    border-radius: 20px;
     -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
     box-shadow: inset 0 0 0 rgba(0,0,0,.075);
 }
@@ -400,6 +414,9 @@ ul.header-list li {
 	line-height: 90px;
 	text-align: center;
 	margin-bottom:20px;
+}
+.brand-logo img {
+	width: 90%;
 }
 
 .brand-logo.padd-right {
@@ -503,6 +520,13 @@ ul.header-list-2 li {
 	list-style: outside none;
 	margin-bottom: 26px;
 	padding-left: 60px;
+}
+
+@media(max-width: 730px){
+	ul.header-list-2 li {
+		background-image: none;
+		padding-left: 0px;
+	}
 }
 
 .client-margin-fix{
