@@ -1,11 +1,8 @@
 /*
-
   Author: creativeCary
   Template: CloudSoft
   Version: 1.0
   URL: http://themeforest.net/user/creativecary
-
-
 */
 	
 
@@ -80,3 +77,20 @@
 			var startChar = options.url.indexOf('?') === -1 ? '?' : '&';
 			options.url += startChar + '_noCache=' + cacheBuster;
 		});
+
+
+
+	// Slick Slider
+	// $(document).ready(function(){
+	// 	$('.slider').slick({
+	// 		arrows: true
+	// 	});
+	//   });
+
+	$(function(){
+		$('.slider').slick({
+			arrows:true,
+			prevArrow: '.arrow-next',
+			nextArrow:'.arrow-prev',
+		})
+	})
